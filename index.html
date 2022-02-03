@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *,*::after,*::before{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: #efefef;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+        .firstcontainer{
+           
+            min-height: 90vmin;
+            min-width:90vmin;
+            
+            
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            border:1.5px solid black;
+            padding:10px;
+        }
+
+        .firstcontainer > div{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .thirdcontainer{
+            min-height:60vmin;
+            width:90vw;
+            margin-top: 20px;
+            align-self: center;
+            border:1px solid black;
+            display:flex;
+            flex-direction: row;
+            
+            justify-content: space-around;
+        }
+        .imagesection{
+            height:200px;
+            width:200px;
+            border:1px solid black;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .lable{
+            font-size: medium;
+            
+        }
+        .name{
+            min-width: 20vw;
+            min-height:2vh;
+        }
+        #phone{
+           
+        }
+       #form{
+           margin-top: auto;
+           margin-bottom: auto;
+           text-align: left;
+       }
+       .buttons{
+           margin-top: 10px;
+
+       }
+       button{
+           height:30px;
+           width:90px;
+           margin-left: 10px;
+       }
+    </style>
+    <title>Event Page</title>
+
+</head>
+<body>
+    <div class="firstcontainer">
+        <div class="secondcontainer">
+            <div class="text1">Event 1</div>
+            <div class="text2">Number of Seats Available: 23</div>
+        </div>
+        <div class="thirdcontainer">
+            <div class="imagesection"></div>
+            <form id="form">
+                <div id="name">
+                    <label for="name" class="lable">Name:</label>
+                    <input type="text" class="name input">
+                </div>
+
+                <div id="name">
+                    <label for="name" class="lable">Email :</label>
+                    <input type="text" class="name input">
+                </div>
+
+                <div id="Phone">
+                    <label for="name" class="lable">Phone:</label>
+                    <input type="number" class="name input">
+                </div>
+                <div class="buttons">
+                    <button>Submit</button>
+                    <button>Cancel</button>
+                    
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
